@@ -34,11 +34,11 @@ PtrToEmployee searchEmployeeByPhoneNumber(PtrToConstEmployee ptr, int tableSize,
     return NULL;
 }
 
-PtrToEmployee searchEmployeeBySalary(PtrToConstEmployee ptr, int tableSize, double * targetSalary) {
+PtrToEmployee searchEmployeeBySalary(PtrToConstEmployee ptr, int tableSize, double targetSalary) {
     const PtrToConstEmployee endPtr = ptr + tableSize;
 
     for(; ptr < endPtr; ptr++) {
-        if(strcmp(ptr-> salary == targetSalary) == 0)
+        if(ptr-> salary == targetSalary)
             return (PtrToEmployee) ptr;
     }
     return NULL;
